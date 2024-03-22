@@ -1,0 +1,62 @@
+:root {
+    --background: #3D3951;
+    --alt-background: #4E4A6E;
+    --color: #FFF;
+    --a-color: #0Cf;
+    --a-alt-color: #0Af;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    overflow: hidden auto;
+    font-family: "Doppio One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body #root {
+    background: var(--background);
+    color: var(--color);
+    height: 100%;
+    width: 100%;
+}
+body.light {
+    --background: #FFF;
+    --alt-background: #DDD;
+    --color: #000;
+    --a-color: #06A;
+    --a-alt-color: #0AC;
+}
+a {
+    color: var(--a-color);
+    text-decoration: none;
+    transition: color .5s ease, text-decoration .5s ease;
+}
+a:hover {
+    color: var(--a-alt-color);
+    text-decoration: underline;
+}   
+
+::-webkit-scrollbar {
+    width: 1vh;
+    height: 1vh;
+    background: #333;
+    cursor: pointer;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #00000000;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #111;
+    border-radius: 5vh;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+* {
+    color: var(--color);
+    transition: color .5s ease;
+}
